@@ -11,6 +11,8 @@
     header {
         padding-top: 66px;
     nav{
+        float: left;
+        margin-top: 15px;
         ul{
             li{
                 display: inline-block;
@@ -27,7 +29,44 @@
     #search {
         width: 193px;
         height: 43px;
+        float: left;
+        border: 1px solid #b2ac9c;
+        border-radius: 15px;
+        input[type=text] {           
+            line-height: 43px;
+            width: 159px;
+            float:left;
+            padding: 0 8px
+        }
+        .fa-search {
+            color: #808080;
+            font-size: 22px;
+            float:left;
+            line-height: 43px;
+        }
         
     }
+    #cart {
+        float:right;
+        margin-top:5px;
+        .fa-shopping-cart {
+            font-size: 30px;
+            color: $mineshaft;
+        }
+    }
+    }
+    .headerText {
+        width: 658px;
+        margin: 121px auto 0;
+        text-align: center;
+        h5 {
+            font-weight:  400;
+            font-style: italic;
+            font-family: 'Noto Serif', serif;
+            margin-bottom: 28px;
+        }
+        h1{
+            margin-bottom: 47px;
+        }
     }
 }
