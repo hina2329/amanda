@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'AvenirNextLTPro-Regular';
+    src: url('../fonts/AvenirNextLTPro-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/AvenirNextLTPro-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/AvenirNextLTPro-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/AvenirNextLTPro-Regular.otf') format('opentype'), /* Safari, Android, iOS */
+        url('../fonts/AvenirNextLTPro-Regular') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'AvenirNextLTPro-Bold';
+    src: url('../fonts/AvenirNextLTPro-Bold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/AvenirNextLTPro-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/AvenirNextLTPro-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/AvenirNextLTPro-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/AvenirNextLTPro-Bold.otf') format('opentype'), /* Safari, Android, iOS */
+        url('../fonts/AvenirNextLTPro-Bold') format('svg'); /* Legacy iOS */
+}
+
+body {
+    font-family: 'AvenirNextLTPro-Regular';
+    font-size: 15px;   
+}
+h1 {
+    font-size: 60px;
+     font-family: 'AvenirNextLTPro-Bold';
+     color: $codgrey;
+     line-height: 61px;
+     margin-bottom: 45px;
+}
+h2 {
+    font-size: 36px;
+     font-family: 'AvenirNextLTPro-Regular';
+     color: $emperor2;
+     line-height: 36px;
+     margin-bottom: 20px;
+}
+h3 {
+    font-size: 32px;
+    font-family: 'AvenirNextLTPro-Regular';
+     color: $codgrey;
+     margin-bottom: 45px;
+}
+h4 {
+    font-size: 30px;
+    font-family: 'Arimo', sans-serif;
+     color: $heavymetal;
+     margin-bottom: 45px;
+}
+h5 {
+    font-size: 27px;
+    font-family: 'Arimo', sans-serif;
+     color: $dovegrey;
+     font-weight: 700;
+
+}
+h6 {
+    font-size: 18px;
+    font-family: 'Arimo', sans-serif;
+     color: $mineshaft2;
+     font-weight: 700;
+
+}

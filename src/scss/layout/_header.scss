@@ -1,0 +1,33 @@
+/* ======= HEADER ======= */
+#headerBanner{
+    background: url("../images/header-image.jpg") no-repeat;
+    height: 693px;
+    width: 1638px;
+    background-position: center;
+    position: relative;
+    @media  (min-width: 1025px) and (max-width: 1366px){ 
+           width: 100%;    
+    }
+    header {
+        padding-top: 66px;
+    nav{
+        ul{
+            li{
+                display: inline-block;
+                a{
+                    font-size: 17px;
+                    text-transform: uppercase;
+                    color: $mineshaft;
+                    text-decoration: none;
+                    margin: 0 31px;
+                }
+            }
+        }
+    }
+    #search {
+        width: 193px;
+        height: 43px;
+        
+    }
+    }
+}

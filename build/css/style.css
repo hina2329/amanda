@@ -1,0 +1,140 @@
+/* Dojo v1.1 */
+/* ====================== */
+/*         ASSETS         */
+/* ====================== */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  background: transparent;
+  box-sizing: border-box; }
+
+ol, ul {
+  list-style: none; }
+
+:focus {
+  outline: 0; }
+
+.clear {
+  clear: both;
+  line-height: 0;
+  font-size: 0; }
+
+.clearfix:after {
+  clear: both;
+  content: '.';
+  display: block;
+  visibility: hidden;
+  height: 0; }
+
+.clearfix {
+  display: inline-block; }
+
+* html .clearfix {
+  height: 1%; }
+
+.clearfix {
+  display: block; }
+
+header,
+nav,
+section,
+article,
+aside,
+footer {
+  display: block; }
+
+@font-face {
+  font-family: 'AvenirNextLTPro-Regular';
+  src: url("../fonts/AvenirNextLTPro-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/AvenirNextLTPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextLTPro-Regular.woff2") format("woff2"), url("../fonts/AvenirNextLTPro-Regular.woff") format("woff"), url("../fonts/AvenirNextLTPro-Regular.otf") format("opentype"), url("../fonts/AvenirNextLTPro-Regular") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'AvenirNextLTPro-Bold';
+  src: url("../fonts/AvenirNextLTPro-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/AvenirNextLTPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextLTPro-Bold.woff2") format("woff2"), url("../fonts/AvenirNextLTPro-Bold.woff") format("woff"), url("../fonts/AvenirNextLTPro-Bold.otf") format("opentype"), url("../fonts/AvenirNextLTPro-Bold") format("svg");
+  /* Legacy iOS */ }
+
+body {
+  font-family: 'AvenirNextLTPro-Regular';
+  font-size: 15px; }
+
+h1 {
+  font-size: 60px;
+  font-family: 'AvenirNextLTPro-Bold';
+  color: #161616;
+  line-height: 61px;
+  margin-bottom: 45px; }
+
+h2 {
+  font-size: 36px;
+  font-family: 'AvenirNextLTPro-Regular';
+  color: #515151;
+  line-height: 36px;
+  margin-bottom: 20px; }
+
+h3 {
+  font-size: 32px;
+  font-family: 'AvenirNextLTPro-Regular';
+  color: #161616;
+  margin-bottom: 45px; }
+
+h4 {
+  font-size: 30px;
+  font-family: 'Arimo', sans-serif;
+  color: #181A19;
+  margin-bottom: 45px; }
+
+h5 {
+  font-size: 27px;
+  font-family: 'Arimo', sans-serif;
+  color: #6c6c6c;
+  font-weight: 700; }
+
+h6 {
+  font-size: 18px;
+  font-family: 'Arimo', sans-serif;
+  color: #353535;
+  font-weight: 700; }
+
+/* ====================== */
+/*         LAYOUT         */
+/* ====================== */
+/* ======= HEADER ======= */
+#headerBanner {
+  background: url("../images/header-image.jpg") no-repeat;
+  height: 693px;
+  width: 1638px;
+  background-position: center;
+  position: relative; }
+  @media (min-width: 1025px) and (max-width: 1366px) {
+    #headerBanner {
+      width: 100%; } }
+  #headerBanner header {
+    padding-top: 66px; }
+    #headerBanner header nav ul li {
+      display: inline-block; }
+      #headerBanner header nav ul li a {
+        font-size: 17px;
+        text-transform: uppercase;
+        color: #2f2e2e;
+        text-decoration: none;
+        margin: 0 31px; }
+    #headerBanner header #search {
+      width: 193px;
+      height: 43px; }
+
+/* ======= FOOTER ======= */
+/* ======== BASE ======== */
+.container {
+  width: 1100px;
+  margin: 0 auto; }
+
+@media (max-width: 1025px) and (min-width: 1366px) {
+  #headerBanner {
+    width: 100%; } }
