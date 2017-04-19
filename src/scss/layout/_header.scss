@@ -1,72 +1,92 @@
 /* ======= HEADER ======= */
-#headerBanner{
-    background: url("../images/header-image.jpg") no-repeat;
+#headerBanner {
+    background: url(../images/header-image.jpg) no-repeat center top;
     height: 693px;
-    width: 1638px;
-    background-position: center;
     position: relative;
-    @media  (min-width: 1025px) and (max-width: 1366px){ 
-           width: 100%;    
-    }
     header {
+        width: 1103px;
         padding-top: 66px;
-    nav{
-        float: left;
-        margin-top: 15px;
-        ul{
-            li{
-                display: inline-block;
-                a{
-                    font-size: 17px;
-                    text-transform: uppercase;
-                    color: $mineshaft;
-                    text-decoration: none;
-                    margin: 0 31px;
+        margin: 0 auto;
+        overflow: hidden;
+        nav {
+            float: left;
+            margin-top: 15px;
+            ul {
+                li {
+                    display: inline-block;
+                    a {
+                        font-size: 17px;
+                        text-transform: uppercase;
+                        color: $mineshaft;
+                        text-decoration: none;
+                        margin: 0 30px;
+                        &:hover {
+                            color: $emerald;
+                        }
+                    }
+                    &.logo {
+                        width: 176px;
+                        height: 49px;
+                        a {
+                            width: 176px;
+                            height: 49px;
+                            display: block;
+                            background: url(../images/logo.png) no-repeat;
+                            margin: 0;
+                            text-indent: -9000px;
+                            transform: translateY(-50%);
+                        }
+                    }
+                }
+            }
+        }
+        #search {
+            width: 193px;
+            height: 43px;
+            float: left;
+            border: 1px solid #b2ac9c;
+            border-radius: 22px;
+            input[type=text] {
+                line-height: 43px;
+                width: 159px;
+                float: left;
+                padding: 0 12px;
+                font-size: 12px;
+            }
+            .fa-search {
+                color: #808080;
+                font-size: 22px;
+                float: left;
+                line-height: 41px;
+            }
+
+        }
+        #cart {
+            float: right;
+            margin-top: 5px;
+            a {
+                color: $mineshaft;
+                .fa-shopping-cart {
+                    font-size: 30px;
+                }
+                &:hover {
+                  color: $emerald;
                 }
             }
         }
     }
-    #search {
-        width: 193px;
-        height: 43px;
-        float: left;
-        border: 1px solid #b2ac9c;
-        border-radius: 15px;
-        input[type=text] {           
-            line-height: 43px;
-            width: 159px;
-            float:left;
-            padding: 0 8px
-        }
-        .fa-search {
-            color: #808080;
-            font-size: 22px;
-            float:left;
-            line-height: 43px;
-        }
-        
-    }
-    #cart {
-        float:right;
-        margin-top:5px;
-        .fa-shopping-cart {
-            font-size: 30px;
-            color: $mineshaft;
-        }
-    }
-    }
     .headerText {
         width: 658px;
-        margin: 121px auto 0;
+        margin: 78px auto 0;
         text-align: center;
         h5 {
-            font-weight:  400;
+            font-weight: 400;
             font-style: italic;
             font-family: 'Noto Serif', serif;
-            margin-bottom: 28px;
+            margin-bottom: 20px;
         }
-        h1{
-            margin-bottom: 47px;
+        h1 {
+            margin-bottom: 40px;
         }
     }
 }

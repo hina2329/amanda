@@ -1,0 +1,41 @@
+#comfortQuality {
+    padding: 138px 0;
+    text-align: center;
+    h6 {
+        line-height: 32px;
+        margin: 0 0 125px;
+    }
+    .colLeft {
+        width: 697px;
+        float: left;
+        position: relative;
+        img {
+            position: absolute;
+            right: 10px;
+        }
+    }
+    .colRight {
+        width: 406px;
+        float: right;
+        text-align: left;
+        .info {
+            h6 {
+                margin: 0 0 16px;
+            }
+            p {
+                line-height: 22px;
+                color: #757575;
+                text-align: justify;
+            }
+            &:nth-child(1) {
+                margin: 0 0 29px;
+            }
+            &:nth-child(2) {
+                margin: 0 0 34px;
+            }
+            &:nth-child(3) {
+                margin: 0 0 35px;
+            }
+        }
+    }
+}

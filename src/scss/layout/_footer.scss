@@ -1,4 +1,60 @@
 /* ======= FOOTER ======= */
-#footer {
-	
+footer {
+	padding: 116px 0 0;
+    max-width: 1638px;
+    margin: 0 auto;
+    .footerText {
+        width: 570px;
+        float: left;
+        h2 {
+            font-size: 22px;
+            padding: 69px 0 0;
+        }
+        p {
+            width: 385px;
+            margin: 0 0 35px;
+            line-height: 24px;
+            color: $emperor;
+        }
+    }
+    .menu {
+        float: left;
+        ul {
+            li {
+                a {
+                    text-decoration: none;
+                    font-size: 16px;
+                    line-height: 30px;
+                    color: $scorpion;
+                    &:hover {
+                        color: $emerald;
+                    }
+                }
+            }
+        }
+        &:nth-child(1) {
+            width: 222px;
+        }
+        &:nth-child(2) {
+            width: 204px;
+        }
+    }
+    .footerCopyright {
+        line-height: 129px;
+        border-top: #d5d2ca 1px solid;
+        clear: both;
+        color: #888888;
+        font-size: 14px;
+        .social {
+            float: right;
+            a {
+                color: #8f8381;
+                font-size: 20px;
+                margin: 0 0 0 34px;
+                &:hover {
+                    color: $emerald;
+                }
+            }
+        }
+    }
 }

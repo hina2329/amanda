@@ -1,0 +1,40 @@
+#freeShipping {
+    padding: 39px 0 15px;
+    background: url(../images/wall-bg.jpg) no-repeat center;
+    max-width: 1638px;
+    margin: 0 auto;
+    h2 {
+        margin: 0 0 10px;
+    }
+    p {
+        margin: 0 0 20px;
+        line-height: 24px;
+        color: $emperor;
+    }
+    .container {
+        width: 587px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .colLeft {
+        width: 83px;
+        float: left;
+        padding: 35px 0 0;
+    }
+    .colRight {
+        width: 413px;
+        float: right;
+    }
+    .btn {
+        border: $emerald 2px solid;
+        background: none;
+        padding: 0 42px;
+        line-height: 43px;
+        color: $emperor;
+        font-size: 16px;
+        &:hover {
+            background: $emerald;
+            color: $white;
+        }
+    }
+}
