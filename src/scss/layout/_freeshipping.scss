@@ -3,27 +3,55 @@
     background: url(../images/wall-bg.jpg) no-repeat center;
     max-width: 1638px;
     margin: 0 auto;
+    @include media('<tablet'){ 
+        width: 100%;
+    }
     h2 {
         margin: 0 0 10px;
+        @include media('<tablet'){
+            font-size: 25px;
+            margin-bottom: 5px;
+        }
     }
     p {
         margin: 0 0 20px;
         line-height: 24px;
         color: $emperor;
+        @include media('<tablet'){
+            font-size: 12px;
+            line-height: 18px;
+            margin-bottom: 8px;
+        }
     }
     .container {
         width: 587px;
         margin: 0 auto;
         overflow: hidden;
+        @include media('<tablet'){ 
+            width: 92%;
+        }
     }
     .colLeft {
         width: 83px;
         float: left;
         padding: 35px 0 0;
+        @include media('<tablet'){ 
+            width: 100%;
+            padding: 0;
+        }
+        img {
+            @include media('<tablet'){ 
+                width: 60px;
+
+            }
+        }
     }
     .colRight {
         width: 413px;
         float: right;
+        @include media('<tablet'){ 
+            width: 100%;
+        }
     }
     .btn {
         border: $emerald 2px solid;

@@ -1,20 +1,47 @@
 /* ======= FOOTER ======= */
 footer {
-	padding: 116px 0 0;
+    padding: 116px 0 0;
     max-width: 1638px;
     margin: 0 auto;
+    .container {
+        @include media('<tablet') {
+            width: 92%;
+        }
+        @include media('>=tablet', '<=desktop'){ 
+            width: 90%;
+        }
+    }
     .footerText {
         width: 570px;
         float: left;
+        @include media('<tablet') {
+            width: 100%;
+        }
+        @include media('>=tablet', '<desktop'){ 
+            width: 300px;
+        }
+        @include media('>=769px', '<=desktop'){ 
+            width: 400px;
+        }
         h2 {
             font-size: 22px;
             padding: 69px 0 0;
+             @include media('>=tablet', '<=desktop'){ 
+                 padding: 40px 0 0;
+            }
         }
         p {
             width: 385px;
             margin: 0 0 35px;
             line-height: 24px;
             color: $emperor;
+            @include media('<tablet') {
+                width: 100%;
+            }
+            @include media('>=tablet', '<desktop'){ 
+                width: 300px;
+            }
+
         }
     }
     .menu {
@@ -34,9 +61,21 @@ footer {
         }
         &:nth-child(1) {
             width: 222px;
+            @include media('<tablet') {
+                width: 115px;
+            }
+             @include media('>=tablet', '<desktop'){ 
+               width: 150px;
+            }
         }
         &:nth-child(2) {
             width: 204px;
+            @include media('<tablet') {
+                width: 115px;
+            }
+              @include media('>=tablet', '<desktop'){ 
+               width: 150px;
+            }
         }
     }
     .footerCopyright {
@@ -45,6 +84,9 @@ footer {
         clear: both;
         color: #888888;
         font-size: 14px;
+        @include media('<tablet') {
+            line-height: 67px;
+        }
         .social {
             float: right;
             a {

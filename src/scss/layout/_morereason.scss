@@ -1,0 +1,49 @@
+#moreReason {
+    background: $emerald;
+    padding: 50px 26px;
+    overflow:hidden;
+    img {
+        @include media('<tablet'){
+            width: 100%;
+        }
+         @include media('>=tablet', '<=desktop'){ 
+            width: 100%;
+        }
+
+    }
+    .box{
+        border: 5px solid $white;
+        width: 178px;
+        float: left;
+        margin: 0 12px;
+        text-align: center;
+        padding: 40px 15px;
+        
+        p {
+            color: $white;
+        }
+       
+    }
+    .box1 {
+        height: 550px;
+         box-sizing: border-box;
+    }
+    .box2 {
+        height: 674px; 
+         box-sizing: border-box;
+    }
+    .box3 {
+        height: 792px;
+        box-sizing: border-box;
+    }
+    .box4 {
+        height: 906px; 
+        box-sizing: border-box;
+    }
+    .box5 {
+        height: 1032px; 
+        box-sizing: border-box;
+    }
+
+}
+

@@ -142,14 +142,42 @@ h6 {
   background: url(../images/header-image.jpg) no-repeat center top;
   height: 693px;
   position: relative; }
+  @media (max-width: 767px) {
+    #headerBanner {
+      width: 100%;
+      height: auto;
+      background-position: center;
+      background-size: cover; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #headerBanner {
+    width: 100%; } }
   #headerBanner header {
     width: 1103px;
     padding-top: 66px;
     margin: 0 auto;
     overflow: hidden; }
+    @media (max-width: 767px) {
+      #headerBanner header {
+        width: 100%; } }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #headerBanner header {
+    width: 96%; } }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  #headerBanner header {
+    width: 71%; } }
     #headerBanner header nav {
       float: left;
       margin-top: 15px; }
+      @media (max-width: 767px) {
+        #headerBanner header nav {
+          display: none; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #headerBanner header nav {
+    margin-top: 5px; } }
       #headerBanner header nav ul li {
         display: inline-block; }
         #headerBanner header nav ul li a {
@@ -158,11 +186,24 @@ h6 {
           color: #2f2e2e;
           text-decoration: none;
           margin: 0 30px; }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #headerBanner header nav ul li a {
+    font-size: 12px;
+    margin: 0 14px; } }
           #headerBanner header nav ul li a:hover {
             color: #41C683; }
         #headerBanner header nav ul li.logo {
           width: 176px;
           height: 49px; }
+          @media (max-width: 767px) {
+            #headerBanner header nav ul li.logo {
+              margin: 0 auto 15px; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #headerBanner header nav ul li.logo {
+    background-size: cover;
+    width: 122px; } }
           #headerBanner header nav ul li.logo a {
             width: 176px;
             height: 49px;
@@ -171,60 +212,157 @@ h6 {
             margin: 0;
             text-indent: -9000px;
             transform: translateY(-50%); }
+            @media (max-width: 767px) {
+              #headerBanner header nav ul li.logo a {
+                transform: initial; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #headerBanner header nav ul li.logo a {
+    background-size: cover;
+    width: 120px;
+    height: 33px;
+    line-height: 1px; } }
     #headerBanner header #search {
       width: 193px;
       height: 43px;
       float: left;
       border: 1px solid #b2ac9c;
       border-radius: 22px; }
+      @media (max-width: 767px) {
+        #headerBanner header #search {
+          float: none;
+          margin: 0 auto;
+          margin-bottom: 25px; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #headerBanner header #search {
+    width: 150px;
+    height: 30px;
+    line-height: 30px; } }
       #headerBanner header #search input[type=text] {
         line-height: 43px;
         width: 159px;
         float: left;
         padding: 0 12px;
         font-size: 12px; }
-      #headerBanner header #search .fa-search {
-        color: #808080;
-        font-size: 22px;
-        float: left;
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #headerBanner header #search input[type=text] {
+    width: 150px;
+    width: 120px;
+    line-height: 30px; } }
+        #headerBanner header #search input[type=text] .fa-search {
+          color: #808080;
+          font-size: 22px;
+          float: left;
+          line-height: 41px; }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #headerBanner header #search input[type=text] .fa-search {
+    line-height: 30px;
+    font-size: 18px; } }
+      #headerBanner header #search button {
         line-height: 41px; }
+        @media (max-width: 766px) {
+          #headerBanner header #search button {
+            line-height: 41px; } }
     #headerBanner header #cart {
       float: right;
       margin-top: 5px; }
+      @media (max-width: 767px) {
+        #headerBanner header #cart {
+          text-align: center;
+          float: none; } }
       #headerBanner header #cart a {
         color: #2f2e2e; }
         #headerBanner header #cart a .fa-shopping-cart {
           font-size: 30px; }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #headerBanner header #cart a .fa-shopping-cart {
+    font-size: 22px;
+    margin-right: 5px; } }
         #headerBanner header #cart a:hover {
           color: #41C683; }
   #headerBanner .headerText {
     width: 658px;
     margin: 78px auto 0;
     text-align: center; }
+    @media (max-width: 767px) {
+      #headerBanner .headerText {
+        width: 100%; } }
     #headerBanner .headerText h5 {
       font-weight: 400;
       font-style: italic;
       font-family: 'Noto Serif', serif;
       margin-bottom: 20px; }
+      @media (max-width: 767px) {
+        #headerBanner .headerText h5 {
+          font-size: 20px; } }
     #headerBanner .headerText h1 {
       margin-bottom: 40px; }
+      @media (max-width: 767px) {
+        #headerBanner .headerText h1 {
+          font-size: 35px;
+          line-height: 35px; } }
+    #headerBanner .headerText .btn {
+      margin-bottom: 30px; }
+  #headerBanner .mobileNav {
+    display: none; }
+    @media (max-width: 767px) {
+      #headerBanner .mobileNav {
+        display: block;
+        float: none;
+        text-align: center; }
+        #headerBanner .mobileNav li {
+          display: block;
+          line-height: 30px; } }
 
 /* ======= FOOTER ======= */
 footer {
   padding: 116px 0 0;
   max-width: 1638px;
   margin: 0 auto; }
+  @media (max-width: 767px) {
+    footer .container {
+      width: 92%; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  footer .container {
+    width: 90%; } }
   footer .footerText {
     width: 570px;
     float: left; }
+    @media (max-width: 767px) {
+      footer .footerText {
+        width: 100%; } }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  footer .footerText {
+    width: 300px; } }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  footer .footerText {
+    width: 400px; } }
     footer .footerText h2 {
       font-size: 22px;
       padding: 69px 0 0; }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  footer .footerText h2 {
+    padding: 40px 0 0; } }
     footer .footerText p {
       width: 385px;
       margin: 0 0 35px;
       line-height: 24px;
       color: #555555; }
+      @media (max-width: 767px) {
+        footer .footerText p {
+          width: 100%; } }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  footer .footerText p {
+    width: 300px; } }
   footer .menu {
     float: left; }
     footer .menu ul li a {
@@ -236,14 +374,31 @@ footer {
         color: #41C683; }
     footer .menu:nth-child(1) {
       width: 222px; }
+      @media (max-width: 767px) {
+        footer .menu:nth-child(1) {
+          width: 115px; } }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  footer .menu:nth-child(1) {
+    width: 150px; } }
     footer .menu:nth-child(2) {
       width: 204px; }
+      @media (max-width: 767px) {
+        footer .menu:nth-child(2) {
+          width: 115px; } }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  footer .menu:nth-child(2) {
+    width: 150px; } }
   footer .footerCopyright {
     line-height: 129px;
     border-top: #d5d2ca 1px solid;
     clear: both;
     color: #888888;
     font-size: 14px; }
+    @media (max-width: 767px) {
+      footer .footerCopyright {
+        line-height: 67px; } }
     footer .footerCopyright .social {
       float: right; }
       footer .footerCopyright .social a {
@@ -261,20 +416,71 @@ footer {
 #comfortQuality {
   padding: 138px 0;
   text-align: center; }
+  @media (max-width: 767px) {
+    #comfortQuality {
+      padding: 50px 0; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #comfortQuality {
+    padding: 50px 0; } }
+  @media (max-width: 767px) {
+    #comfortQuality .container {
+      width: 96%; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #comfortQuality .container {
+    width: 96%; } }
   #comfortQuality h6 {
     line-height: 32px;
     margin: 0 0 125px; }
+    @media (max-width: 767px) {
+      #comfortQuality h6 {
+        font-size: 16px;
+        margin: 0 0 80px; } }
   #comfortQuality .colLeft {
     width: 697px;
     float: left;
     position: relative; }
+    @media (max-width: 767px) {
+      #comfortQuality .colLeft {
+        width: 96%;
+        float: none;
+        padding: 0 4%; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #comfortQuality .colLeft {
+    width: 96%;
+    float: none;
+    padding: 0 4%; } }
     #comfortQuality .colLeft img {
       position: absolute;
       right: 10px; }
+      @media (max-width: 767px) {
+        #comfortQuality .colLeft img {
+          width: 100%;
+          position: initial;
+          right: 0; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #comfortQuality .colLeft img {
+    width: 100%;
+    position: initial;
+    right: 0; } }
   #comfortQuality .colRight {
     width: 406px;
     float: right;
     text-align: left; }
+    @media (max-width: 767px) {
+      #comfortQuality .colRight {
+        width: 96%;
+        float: none;
+        padding: 0 4%; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #comfortQuality .colRight {
+    width: 96%;
+    float: none;
+    padding: 0 4%; } }
     #comfortQuality .colRight .info h6 {
       margin: 0 0 16px; }
     #comfortQuality .colRight .info p {
@@ -294,13 +500,63 @@ footer {
   padding: 120px 0 114px 0;
   margin: 0 auto;
   overflow: hidden; }
+  @media (max-width: 767px) {
+    #lifeTimeWarranty {
+      width: 100%;
+      padding: 50px 0; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #lifeTimeWarranty {
+    width: 100%;
+    padding: 50px 0; } }
+  @media (max-width: 767px) {
+    #lifeTimeWarranty .container {
+      width: 92%; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #lifeTimeWarranty .container {
+    width: 92%; } }
   #lifeTimeWarranty .colLeft {
     width: 475px;
     float: left;
     margin-top: 104px; }
+    @media (max-width: 767px) {
+      #lifeTimeWarranty .colLeft {
+        width: 94%;
+        margin-top: 90px;
+        float: none; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #lifeTimeWarranty .colLeft {
+    width: 94%;
+    margin-top: 40px;
+    float: none; } }
+    @media (max-width: 767px) {
+      #lifeTimeWarranty .colLeft h4 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        margin-top: 25px; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #lifeTimeWarranty .colLeft h4 {
+    margin-bottom: 10px; } }
+    @media (max-width: 767px) {
+      #lifeTimeWarranty .colLeft p {
+        font-size: 12px; } }
   #lifeTimeWarranty .colRight {
     width: 571px;
     float: right; }
+    @media (max-width: 767px) {
+      #lifeTimeWarranty .colRight {
+        width: 100%;
+        float: none; } }
+    @media (max-width: 767px) {
+      #lifeTimeWarranty .colRight img {
+        width: 100%; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #lifeTimeWarranty .colRight img {
+    width: 100%; } }
   #lifeTimeWarranty p {
     margin: 0 0 15px;
     line-height: 24px;
@@ -315,12 +571,64 @@ footer {
 #galleyType {
   padding: 117px 0;
   overflow: hidden; }
+  @media (max-width: 767px) {
+    #galleyType {
+      width: 100%;
+      padding: 50px 0; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #galleyType {
+    width: 100%;
+    padding: 50px 0; } }
+  @media (max-width: 767px) {
+    #galleyType .container {
+      width: 90%; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #galleyType .container {
+    width: 90%; } }
   #galleyType .colLeft {
     width: 519px;
     float: left; }
+    @media (max-width: 767px) {
+      #galleyType .colLeft {
+        width: 100%;
+        float: none;
+        margin-bottom: 30px; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #galleyType .colLeft {
+    width: 100%;
+    float: none;
+    margin-bottom: 30px; } }
+    @media (max-width: 767px) {
+      #galleyType .colLeft img {
+        width: 100%;
+        margin: 0 auto; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #galleyType .colLeft img {
+    width: 100%;
+    margin: 0 auto; } }
   #galleyType .colRight {
     width: 523px;
     float: right; }
+    @media (max-width: 767px) {
+      #galleyType .colRight {
+        width: 100%;
+        float: none; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #galleyType .colRight {
+    width: 100%;
+    float: non; } }
+    @media (max-width: 767px) {
+      #galleyType .colRight img {
+        width: 100%; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #galleyType .colRight img {
+    width: 100%; } }
   #galleyType h4 {
     margin: 0 0 15px; }
   #galleyType p {
@@ -342,6 +650,13 @@ footer {
   #galleyType hr {
     clear: both;
     height: 200px; }
+    @media (max-width: 767px) {
+      #galleyType hr {
+        height: 50px; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #galleyType hr {
+    height: 50px; } }
   #galleyType .testimonial {
     width: 100%; }
     #galleyType .testimonial .userInfo {
@@ -349,11 +664,19 @@ footer {
       font-size: 15px;
       color: #555555;
       line-height: 20px; }
+      @media (max-width: 767px) {
+        #galleyType .testimonial .userInfo {
+          padding: 0; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #galleyType .testimonial .userInfo {
+    padding: 0; } }
       #galleyType .testimonial .userInfo img {
         border-radius: 50%;
         border: #41C683 3px solid;
         float: left;
-        margin: 0 23px 0 0; }
+        margin: 0 23px 0 0;
+        width: auto; }
       #galleyType .testimonial .userInfo .userName {
         padding: 23px 0 0; }
       #galleyType .testimonial .userInfo .userRating {
@@ -372,6 +695,15 @@ footer {
       line-height: 24px;
       color: #555555;
       text-align: justify; }
+      @media (max-width: 767px) {
+        #galleyType .testimonial .testimonialText {
+          width: 100%;
+          margin: 0 auto; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #galleyType .testimonial .testimonialText {
+    width: 100%;
+    margin: 0 auto; } }
   #galleyType .pager {
     float: right;
     padding: 80px 0 0; }
@@ -391,23 +723,48 @@ footer {
   background: url(../images/wall-bg.jpg) no-repeat center;
   max-width: 1638px;
   margin: 0 auto; }
+  @media (max-width: 767px) {
+    #freeShipping {
+      width: 100%; } }
   #freeShipping h2 {
     margin: 0 0 10px; }
+    @media (max-width: 767px) {
+      #freeShipping h2 {
+        font-size: 25px;
+        margin-bottom: 5px; } }
   #freeShipping p {
     margin: 0 0 20px;
     line-height: 24px;
     color: #555555; }
+    @media (max-width: 767px) {
+      #freeShipping p {
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 8px; } }
   #freeShipping .container {
     width: 587px;
     margin: 0 auto;
     overflow: hidden; }
+    @media (max-width: 767px) {
+      #freeShipping .container {
+        width: 92%; } }
   #freeShipping .colLeft {
     width: 83px;
     float: left;
     padding: 35px 0 0; }
+    @media (max-width: 767px) {
+      #freeShipping .colLeft {
+        width: 100%;
+        padding: 0; } }
+    @media (max-width: 767px) {
+      #freeShipping .colLeft img {
+        width: 60px; } }
   #freeShipping .colRight {
     width: 413px;
     float: right; }
+    @media (max-width: 767px) {
+      #freeShipping .colRight {
+        width: 100%; } }
   #freeShipping .btn {
     border: #41C683 2px solid;
     background: none;
@@ -418,3 +775,39 @@ footer {
     #freeShipping .btn:hover {
       background: #41C683;
       color: #FFFFFF; }
+
+#moreReason {
+  background: #41C683;
+  padding: 50px 26px;
+  overflow: hidden; }
+  @media (max-width: 767px) {
+    #moreReason img {
+      width: 100%; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #moreReason img {
+    width: 100%; } }
+  #moreReason .box {
+    border: 5px solid #FFFFFF;
+    width: 178px;
+    float: left;
+    margin: 0 12px;
+    text-align: center;
+    padding: 40px 15px; }
+    #moreReason .box p {
+      color: #FFFFFF; }
+  #moreReason .box1 {
+    height: 550px;
+    box-sizing: border-box; }
+  #moreReason .box2 {
+    height: 674px;
+    box-sizing: border-box; }
+  #moreReason .box3 {
+    height: 792px;
+    box-sizing: border-box; }
+  #moreReason .box4 {
+    height: 906px;
+    box-sizing: border-box; }
+  #moreReason .box5 {
+    height: 1032px;
+    box-sizing: border-box; }

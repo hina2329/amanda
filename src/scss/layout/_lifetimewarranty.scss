@@ -4,14 +4,78 @@
     padding: 120px 0 114px 0;
     margin: 0 auto;
     overflow: hidden;
+    @include media('<tablet'){ 
+        width: 100%;
+        padding: 50px 0;
+
+    }
+    @include media('>=tablet', '<=desktop'){ 
+        width: 100%;  
+        padding: 50px 0;
+    }
+    .container {
+        @include media('<tablet'){ 
+            width: 92%;
+
+        }
+        @include media('>=tablet', '<=desktop'){ 
+            width: 92%;
+
+        }
+    }
+
     .colLeft {
         width: 475px;
         float: left;
         margin-top: 104px;
+
+        @include media('<tablet'){ 
+            width: 94%;
+            margin-top: 90px;
+            float: none;
+        }
+        @include media('>=tablet', '<=desktop'){ 
+            width: 94%;
+            margin-top: 40px;
+            float: none
+
+        }
+        h4 {
+            @include media('<tablet'){
+                font-size: 20px;
+                margin-bottom: 15px;
+                margin-top: 25px;
+            }
+            @include media('>=tablet', '<=desktop'){ 
+                margin-bottom: 10px;
+
+            }
+        }
+        p{
+            @include media('<tablet'){
+                font-size: 12px;
+
+            }
+
+        }
     }
     .colRight {
         width: 571px;
         float: right;
+        @include media('<tablet'){ 
+            width: 100%;
+            float: none;
+        }
+        img {
+            @include media('<tablet'){ 
+
+                width: 100%;
+            }
+            @include media('>=tablet', '<=desktop'){ 
+                width: 100%;
+
+            }
+        }
     }
     p {
         margin: 0 0 15px;

@@ -1,23 +1,75 @@
 #comfortQuality {
     padding: 138px 0;
     text-align: center;
+    @include media('<tablet'){ 
+        padding: 50px 0;
+    }
+     @include media('>=tablet', '<=desktop'){ 
+             padding: 50px 0; 
+        }
+    .container {
+        @include media('<tablet'){ 
+            width: 96%
+        }
+         @include media('>=tablet', '<=desktop'){ 
+            width: 96%;  
+        }
+    }
+
     h6 {
         line-height: 32px;
         margin: 0 0 125px;
+        @include media('<tablet'){ 
+            font-size: 16px;
+            margin: 0 0 80px;
+
+        }
     }
     .colLeft {
         width: 697px;
         float: left;
         position: relative;
+        @include media('<tablet'){ 
+            width: 96%;
+            float: none;
+            padding: 0 4%;
+        }
+           @include media('>=tablet', '<=desktop'){ 
+            width: 96%;
+            float: none;
+            padding: 0 4%;
+        }
         img {
             position: absolute;
             right: 10px;
+            @include media('<tablet'){ 
+                width: 100%;
+                position: initial;
+                right: 0;
+            }
+             @include media('>=tablet', '<=desktop'){ 
+            width: 100%;
+                position: initial;
+                right: 0 
+        }
+
         }
     }
     .colRight {
         width: 406px;
         float: right;
         text-align: left;
+        @include media('<tablet'){ 
+            width: 96%;
+            float: none;
+            padding: 0 4%;
+        }
+           @include media('>=tablet', '<=desktop'){ 
+            width: 96%;
+            float: none;
+            padding: 0 4%;
+        }
+        
         .info {
             h6 {
                 margin: 0 0 16px;

@@ -1,13 +1,70 @@
 #galleyType {
     padding: 117px 0;
     overflow: hidden;
+    @include media('<tablet'){ 
+        width: 100%;
+        padding: 50px 0;
+
+    }
+    @include media('>=tablet', '<=desktop'){ 
+        width: 100%;
+        padding: 50px 0;
+
+    }
+    .container {
+        @include media('<tablet'){ 
+            width: 90%;
+
+        }
+        @include media('>=tablet', '<=desktop'){ 
+            width: 90%
+        }
+    }
     .colLeft {
         width: 519px;
         float: left;
+        @include media('<tablet'){ 
+            width: 100%;
+            float:none;
+            margin-bottom: 30px;
+
+        }
+        @include media('>=tablet', '<=desktop'){ 
+            width: 100%;
+            float:none;
+            margin-bottom: 30px;
+        }
+        img {
+            @include media('<tablet'){ 
+                width: 100%;
+                margin: 0 auto;
+            }
+            @include media('>=tablet', '<=desktop'){ 
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
     }
     .colRight {
         width: 523px;
         float: right;
+        @include media('<tablet'){ 
+            width: 100%;
+            float:none;
+
+        }
+        @include media('>=tablet', '<=desktop'){ 
+            width: 100%;
+            float:non
+        }
+        img {
+            @include media('<tablet'){ 
+                width: 100%;
+            } 
+            @include media('>=tablet', '<=desktop'){ 
+                width: 100%;
+            }
+        }
     }
     h4 {
         margin: 0 0 15px;
@@ -34,6 +91,13 @@
     hr {
         clear: both;
         height: 200px;
+        @include media('<tablet'){ 
+            height: 50px;
+
+        }
+        @include media('>=tablet', '<=desktop'){ 
+            height: 50px;
+        }
     }
     .testimonial {
         width: 100%;
@@ -42,11 +106,20 @@
             font-size: 15px;
             color: $emperor;
             line-height: 20px;
+            @include media('<tablet'){ 
+                padding: 0;
+
+            }
+            @include media('>=tablet', '<=desktop'){ 
+                padding: 0;
+            }
+
             img {
                 border-radius: 50%;
                 border: $emerald 3px solid;
                 float: left;
                 margin: 0 23px 0 0;
+                width: auto;
             }
             .userName {
                 padding: 23px 0 0;
@@ -72,6 +145,14 @@
             line-height: 24px;
             color: $emperor;
             text-align: justify;
+            @include media('<tablet'){ 
+                width: 100%;
+                margin: 0 auto;
+            }
+            @include media('>=tablet', '<=desktop'){ 
+                width: 100%;
+                margin: 0 auto
+            }
         }
     }
     .pager {
