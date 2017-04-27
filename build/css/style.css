@@ -780,11 +780,65 @@ footer {
   background: #41C683;
   padding: 50px 26px;
   overflow: hidden; }
+  #moreReason .container {
+    width: 1010px;
+    margin: 0 auto; }
+    @media (max-width: 767px) {
+      #moreReason .container {
+        width: 90%; } }
   #moreReason #contentBoxes {
-    display: table; }
-  @media (max-width: 767px) {
-    #moreReason img {
-      width: 100%; } }
+    display: table;
+    position: relative; }
+    @media (max-width: 767px) {
+      #moreReason #contentBoxes {
+        width: 100%;
+        text-align: center;
+        display: inherit; } }
+    #moreReason #contentBoxes #heading {
+      width: 396px;
+      position: absolute;
+      left: 0;
+      top: 0; }
+      @media (max-width: 767px) {
+        #moreReason #contentBoxes #heading {
+          width: 100%;
+          position: initial; } }
+      #moreReason #contentBoxes #heading h1 {
+        color: #FFFFFF; }
+        @media (max-width: 767px) {
+          #moreReason #contentBoxes #heading h1 {
+            font-size: 40px;
+            line-height: 40px; } }
+        #moreReason #contentBoxes #heading h1 span {
+          font-size: 45px; }
+          @media (max-width: 767px) {
+            #moreReason #contentBoxes #heading h1 span {
+              font-size: 30px;
+              line-height: 30px; } }
+    #moreReason #contentBoxes .imageContent {
+      width: 532px;
+      position: absolute;
+      right: -23px;
+      bottom: 0; }
+      @media (max-width: 767px) {
+        #moreReason #contentBoxes .imageContent {
+          width: 100%;
+          text-align: center;
+          position: inherit; } }
+      #moreReason #contentBoxes .imageContent img {
+        vertical-align: top; }
+        @media (max-width: 767px) {
+          #moreReason #contentBoxes .imageContent img {
+            width: 100%; } }
+      #moreReason #contentBoxes .imageContent .textBox {
+        background: #FFFFFF;
+        width: 507px;
+        padding: 52px 24px;
+        float: right; }
+        @media (max-width: 767px) {
+          #moreReason #contentBoxes .imageContent .textBox {
+            width: 100%;
+            float: none; } }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   #moreReason img {
@@ -793,13 +847,25 @@ footer {
     text-align: center;
     display: table-cell;
     vertical-align: bottom; }
+    @media (max-width: 767px) {
+      #moreReason .box {
+        display: initial; } }
     #moreReason .box p {
       color: #FFFFFF; }
+    #moreReason .box i {
+      font-size: 132px;
+      color: white;
+      margin-bottom: 14px; }
+    #moreReason .box img {
+      margin-bottom: 14px; }
     #moreReason .box div {
       width: 178px;
       padding: 40px 15px;
       border: 5px solid #FFFFFF;
       margin: 0 12px; }
+      @media (max-width: 767px) {
+        #moreReason .box div {
+          margin: 0 auto 12px; } }
   #moreReason .box1 div {
     height: 550px; }
   #moreReason .box2 div {

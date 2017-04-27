@@ -2,13 +2,83 @@
     background: $emerald;
     padding: 50px 26px;
     overflow: hidden;
+    .container{
+        width: 1010px;
+        margin: 0 auto;
+        @include media('<tablet') {
+            width: 90%;
+        }
+    }
     #contentBoxes {
         display: table;
-    }
-    img {
+        position: relative;
         @include media('<tablet') {
             width: 100%;
+            text-align: center;
+            display: inherit;
         }
+        #heading {
+            width: 396px;
+            position: absolute;
+            left:0;
+            top: 0; 
+            @include media('<tablet') {
+            width: 100%;
+            position: initial;
+        }
+                h1{
+                color: $white;
+                   @include media('<tablet') {
+                       font-size: 40px;
+                       line-height: 40px;
+            
+        }
+                span {
+                    font-size: 45px;
+                            @include media('<tablet') {
+                       font-size: 30px; 
+                       line-height: 30px;
+            
+        }
+                }
+                
+            }
+            
+        }
+        .imageContent {
+            width: 532px;
+            position: absolute;
+            right: -23px;
+            bottom: 0;
+             @include media('<tablet') {
+            width: 100%;
+            text-align: center;
+            position: inherit;
+        }
+            img {
+                vertical-align: top;
+                @include media('<tablet') {
+            width: 100%;
+         
+        }
+            }
+            .textBox {
+                background: $white;
+                width: 507px;
+                padding: 52px 24px;
+                float: right;
+                      @include media('<tablet') {
+            width: 100%;
+            float: none;
+         
+        }
+                
+            }
+        }
+    }
+    img {
+       
+        
         @include media('>=tablet', '<=desktop') {
             width: 100%;
         }
@@ -18,14 +88,29 @@
         text-align: center;
         display: table-cell;
         vertical-align: bottom;
+         @include media('<tablet') {
+            display: initial;
+        }
         p {
             color: $white;
+        }
+        i {
+            font-size: 132px;
+            color: white;
+            margin-bottom: 14px;
+        }
+        img {
+            margin-bottom: 14px;
+            
         }
         div {
             width: 178px;
             padding: 40px 15px;
             border: 5px solid $white;
             margin: 0 12px;
+             @include media('<tablet') {
+             margin: 0 auto 12px;
+        }
         }
 
     }
