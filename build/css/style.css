@@ -780,6 +780,8 @@ footer {
   background: #41C683;
   padding: 50px 26px;
   overflow: hidden; }
+  #moreReason #contentBoxes {
+    display: table; }
   @media (max-width: 767px) {
     #moreReason img {
       width: 100%; } }
@@ -788,26 +790,23 @@ footer {
   #moreReason img {
     width: 100%; } }
   #moreReason .box {
-    border: 5px solid #FFFFFF;
-    width: 178px;
-    float: left;
-    margin: 0 12px;
     text-align: center;
-    padding: 40px 15px; }
+    display: table-cell;
+    vertical-align: bottom; }
     #moreReason .box p {
       color: #FFFFFF; }
-  #moreReason .box1 {
-    height: 550px;
-    box-sizing: border-box; }
-  #moreReason .box2 {
-    height: 674px;
-    box-sizing: border-box; }
-  #moreReason .box3 {
-    height: 792px;
-    box-sizing: border-box; }
-  #moreReason .box4 {
-    height: 906px;
-    box-sizing: border-box; }
-  #moreReason .box5 {
-    height: 1032px;
-    box-sizing: border-box; }
+    #moreReason .box div {
+      width: 178px;
+      padding: 40px 15px;
+      border: 5px solid #FFFFFF;
+      margin: 0 12px; }
+  #moreReason .box1 div {
+    height: 550px; }
+  #moreReason .box2 div {
+    height: 674px; }
+  #moreReason .box3 div {
+    height: 792px; }
+  #moreReason .box4 div {
+    height: 906px; }
+  #moreReason .box5 div {
+    height: 1032px; }

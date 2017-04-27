@@ -1,48 +1,58 @@
 #moreReason {
     background: $emerald;
     padding: 50px 26px;
-    overflow:hidden;
+    overflow: hidden;
+    #contentBoxes {
+        display: table;
+    }
     img {
-        @include media('<tablet'){
+        @include media('<tablet') {
             width: 100%;
         }
-         @include media('>=tablet', '<=desktop'){ 
+        @include media('>=tablet', '<=desktop') {
             width: 100%;
         }
 
     }
-    .box{
-        border: 5px solid $white;
-        width: 178px;
-        float: left;
-        margin: 0 12px;
+    .box {
         text-align: center;
-        padding: 40px 15px;
-        
+        display: table-cell;
+        vertical-align: bottom;
         p {
             color: $white;
         }
-       
+        div {
+            width: 178px;
+            padding: 40px 15px;
+            border: 5px solid $white;
+            margin: 0 12px;
+        }
+
     }
     .box1 {
-        height: 550px;
-         box-sizing: border-box;
+        div {
+            height: 550px;
+        }
     }
     .box2 {
-        height: 674px; 
-         box-sizing: border-box;
+        div {
+            height: 674px;
+        }
     }
     .box3 {
-        height: 792px;
-        box-sizing: border-box;
+        div {
+            height: 792px;
+        }
     }
     .box4 {
-        height: 906px; 
-        box-sizing: border-box;
+        div {
+            height: 906px;
+        }
     }
     .box5 {
-        height: 1032px; 
-        box-sizing: border-box;
+        div {
+            height: 1032px;
+        }
     }
 
 }
