@@ -51,4 +51,103 @@
         }
     }
 }
+#shop {
+    background: url("../images/shop.jpg") no-repeat;
+    height: 600px;
+    text-align: center;
+    padding-top: 200px;
+    color: $white;
+    @include media('<tablet') {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+
+    }
+    .shopContent{
+
+        h2{
+            color: $white;
+            @include media('<tablet') {
+                font-size: 25px;
+
+            }
+        }
+        .btn {
+            padding:0 30px;
+            line-height: 35px;
+            font-family: 'AvenirNextLTPro-Bold';
+        }
+    }
+}
+
+#payment {
+    background: #f4f6f7;
+    padding: 80px 0;
+    overflow:hidden;
+     @include media('<tablet') {
+            padding-bottom: 20px;
+        }
+    .container{
+        @include media('<tablet') {
+            width: 96%;
+        }
+    }
+    .paymentMethod {
+        width: 365px;
+        float:left;
+        padding: 0 12px;
+        text-align: center;
+        @include media('<tablet') {
+           
+          margin: 0 auto 50px;
+          float: none;
+          padding: 0;
+          width: 100%;
+        }
+        h6{
+            font-size: 14px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            @include media('<tablet') {
+                font-size: 12px;
+            }
+        }
+        ul {
+            list-style: none;
+            li {
+                height: 40px;
+                width: 60px;
+                margin-left: 1px;
+                box-shadow: 0px 1px 3px 0px #E4E6E8;
+                border-radius: 4px;
+                display: inline-block
+
+            }
+            .payment1 {
+                background: url("../images/payment_methods.png") no-repeat center 4px;
+            }
+            .payment2 {
+                background: url("../images/payment_methods.png") no-repeat center -222px;
+            }
+            .payment3 {
+                background: url("../images/payment_methods.png") no-repeat center -349px;
+            }
+            .payment4 {
+                background: url("../images/payment_methods.png") no-repeat center -476px;
+            }
+            .payment5 {
+                background: url("../images/payment_methods.png") no-repeat center -615px;
+            }
+            .payment6 {
+                background: url("../images/payment_methods.png") no-repeat center -731px;
+            }
+            .payment7 {
+                background: url("../images/payment_methods.png") no-repeat center -876px;
+            }
+            .payment8 {
+                background: url("../images/payment_methods.png") no-repeat center -1065px;
+            }
+        }
+    }
+}
 

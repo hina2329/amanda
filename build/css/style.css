@@ -968,3 +968,78 @@ footer {
     content: "";
     display: table;
     clear: both; }
+
+#shop {
+  background: url("../images/shop.jpg") no-repeat;
+  height: 600px;
+  text-align: center;
+  padding-top: 200px;
+  color: #FFFFFF; }
+  @media (max-width: 767px) {
+    #shop {
+      width: 100%;
+      background-size: cover;
+      background-position: center; } }
+  #shop .shopContent h2 {
+    color: #FFFFFF; }
+    @media (max-width: 767px) {
+      #shop .shopContent h2 {
+        font-size: 25px; } }
+  #shop .shopContent .btn {
+    padding: 0 30px;
+    line-height: 35px;
+    font-family: 'AvenirNextLTPro-Bold'; }
+
+#payment {
+  background: #f4f6f7;
+  padding: 80px 0;
+  overflow: hidden; }
+  @media (max-width: 767px) {
+    #payment {
+      padding-bottom: 20px; } }
+  @media (max-width: 767px) {
+    #payment .container {
+      width: 96%; } }
+  #payment .paymentMethod {
+    width: 365px;
+    float: left;
+    padding: 0 12px;
+    text-align: center; }
+    @media (max-width: 767px) {
+      #payment .paymentMethod {
+        margin: 0 auto 50px;
+        float: none;
+        padding: 0;
+        width: 100%; } }
+    #payment .paymentMethod h6 {
+      font-size: 14px;
+      margin-bottom: 20px;
+      letter-spacing: 1px; }
+      @media (max-width: 767px) {
+        #payment .paymentMethod h6 {
+          font-size: 12px; } }
+    #payment .paymentMethod ul {
+      list-style: none; }
+      #payment .paymentMethod ul li {
+        height: 40px;
+        width: 60px;
+        margin-left: 1px;
+        box-shadow: 0px 1px 3px 0px #E4E6E8;
+        border-radius: 4px;
+        display: inline-block; }
+      #payment .paymentMethod ul .payment1 {
+        background: url("../images/payment_methods.png") no-repeat center 4px; }
+      #payment .paymentMethod ul .payment2 {
+        background: url("../images/payment_methods.png") no-repeat center -222px; }
+      #payment .paymentMethod ul .payment3 {
+        background: url("../images/payment_methods.png") no-repeat center -349px; }
+      #payment .paymentMethod ul .payment4 {
+        background: url("../images/payment_methods.png") no-repeat center -476px; }
+      #payment .paymentMethod ul .payment5 {
+        background: url("../images/payment_methods.png") no-repeat center -615px; }
+      #payment .paymentMethod ul .payment6 {
+        background: url("../images/payment_methods.png") no-repeat center -731px; }
+      #payment .paymentMethod ul .payment7 {
+        background: url("../images/payment_methods.png") no-repeat center -876px; }
+      #payment .paymentMethod ul .payment8 {
+        background: url("../images/payment_methods.png") no-repeat center -1065px; }
