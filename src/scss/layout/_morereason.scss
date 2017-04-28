@@ -8,6 +8,9 @@
         @include media('<tablet') {
             width: 90%;
         }
+        @include media('>=tablet', '<=desktop') {
+            width: 100%;
+        }
     }
     #contentBoxes {
         display: table;
@@ -23,43 +26,47 @@
             left:0;
             top: 0; 
             @include media('<tablet') {
-            width: 100%;
-            position: initial;
-        }
-                h1{
+                width: 100%;
+                position: initial;
+            }
+            h1{
                 color: $white;
-                   @include media('<tablet') {
-                       font-size: 40px;
-                       line-height: 40px;
-            
-        }
+                @include media('<tablet') {
+                    font-size: 40px;
+                    line-height: 40px;
+
+                }
                 span {
                     font-size: 45px;
-                            @include media('<tablet') {
-                       font-size: 30px; 
-                       line-height: 30px;
-            
-        }
+                    @include media('<tablet') {
+                        font-size: 30px; 
+                        line-height: 30px;
+
+                    }
                 }
-                
+
             }
-            
+
         }
         .imageContent {
             width: 532px;
             position: absolute;
             right: -23px;
             bottom: 0;
-             @include media('<tablet') {
-            width: 100%;
-            text-align: center;
-            position: inherit;
-        }
+            @include media('<tablet') {
+                width: 100%;
+                text-align: center;
+                position: inherit;
+            }
             img {
                 vertical-align: top;
                 @include media('<tablet') {
-            width: 100%;
-         
+                    width: 100%;
+
+                }
+                   @include media('>=tablet', '<desktop') {
+            width: 400px;
+            float: right;
         }
             }
             .textBox {
@@ -67,18 +74,21 @@
                 width: 507px;
                 padding: 52px 24px;
                 float: right;
-                      @include media('<tablet') {
-            width: 100%;
-            float: none;
-         
+                @include media('<tablet') {
+                    width: 100%;
+                    float: none;
+
+                }
+                   @include media('>=tablet', '<desktop') {
+            width: 380px;
         }
-                
+
             }
         }
     }
     img {
-       
-        
+
+
         @include media('>=tablet', '<=desktop') {
             width: 100%;
         }
@@ -88,28 +98,48 @@
         text-align: center;
         display: table-cell;
         vertical-align: bottom;
-         @include media('<tablet') {
+        @include media('<tablet') {
             display: initial;
         }
         p {
             color: $white;
+                  @include media('>=tablet', '<desktop') {
+            font-size: 12px;
+        }
         }
         i {
             font-size: 132px;
             color: white;
             margin-bottom: 14px;
+               @include media('>=tablet', '<desktop') {
+            font-size: 100px;
+        }
         }
         img {
             margin-bottom: 14px;
-            
+                     @include media('>=tablet', '<desktop') {
+            width: 100px;
+        }
+
+        }
+        h4{
+                  @include media('>=tablet', '<desktop') {
+            font-size: 22px;
+        }
         }
         div {
             width: 178px;
             padding: 40px 15px;
             border: 5px solid $white;
             margin: 0 12px;
-             @include media('<tablet') {
-             margin: 0 auto 12px;
+            @include media('<tablet') {
+                margin: 0 auto 70px;
+            }
+            @include media('>=tablet', '<=1023px') {
+            width: 120px;
+        }
+           @include media('<=1024px') {
+            width: 170px;
         }
         }
 
@@ -122,21 +152,37 @@
     .box2 {
         div {
             height: 674px;
+            @include media('<tablet') {
+                height: 550px;
+
+            }
         }
     }
     .box3 {
         div {
             height: 792px;
+            @include media('<tablet') {
+                height: 550px;
+
+            }
         }
     }
     .box4 {
         div {
             height: 906px;
+            @include media('<tablet') {
+                height: 550px;
+
+            }
         }
     }
     .box5 {
         div {
             height: 1032px;
+            @include media('<tablet') {
+                height: 550px;
+
+            }
         }
     }
 

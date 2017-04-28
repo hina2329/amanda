@@ -786,6 +786,10 @@ footer {
     @media (max-width: 767px) {
       #moreReason .container {
         width: 90%; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #moreReason .container {
+    width: 100%; } }
   #moreReason #contentBoxes {
     display: table;
     position: relative; }
@@ -830,6 +834,11 @@ footer {
         @media (max-width: 767px) {
           #moreReason #contentBoxes .imageContent img {
             width: 100%; } }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #moreReason #contentBoxes .imageContent img {
+    width: 400px;
+    float: right; } }
       #moreReason #contentBoxes .imageContent .textBox {
         background: #FFFFFF;
         width: 507px;
@@ -839,6 +848,10 @@ footer {
           #moreReason #contentBoxes .imageContent .textBox {
             width: 100%;
             float: none; } }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #moreReason #contentBoxes .imageContent .textBox {
+    width: 380px; } }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   #moreReason img {
@@ -852,12 +865,28 @@ footer {
         display: initial; } }
     #moreReason .box p {
       color: #FFFFFF; }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #moreReason .box p {
+    font-size: 12px; } }
     #moreReason .box i {
       font-size: 132px;
       color: white;
       margin-bottom: 14px; }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #moreReason .box i {
+    font-size: 100px; } }
     #moreReason .box img {
       margin-bottom: 14px; }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #moreReason .box img {
+    width: 100px; } }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #moreReason .box h4 {
+    font-size: 22px; } }
     #moreReason .box div {
       width: 178px;
       padding: 40px 15px;
@@ -865,14 +894,77 @@ footer {
       margin: 0 12px; }
       @media (max-width: 767px) {
         #moreReason .box div {
-          margin: 0 auto 12px; } }
+          margin: 0 auto 70px; } }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #moreReason .box div {
+    width: 120px; } }
+      @media (max-width: 1024px) {
+        #moreReason .box div {
+          width: 170px; } }
   #moreReason .box1 div {
     height: 550px; }
   #moreReason .box2 div {
     height: 674px; }
+    @media (max-width: 767px) {
+      #moreReason .box2 div {
+        height: 550px; } }
   #moreReason .box3 div {
     height: 792px; }
+    @media (max-width: 767px) {
+      #moreReason .box3 div {
+        height: 550px; } }
   #moreReason .box4 div {
     height: 906px; }
+    @media (max-width: 767px) {
+      #moreReason .box4 div {
+        height: 550px; } }
   #moreReason .box5 div {
     height: 1032px; }
+    @media (max-width: 767px) {
+      #moreReason .box5 div {
+        height: 550px; } }
+
+#compare {
+  margin: 50px 0;
+  overflow: hidden; }
+  #compare .container table {
+    width: 100%;
+    min-width: 700px;
+    table-layout: fixed;
+    font-size: 16px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    position: relative; }
+    #compare .container table:before {
+      content: ' ';
+      position: absolute;
+      width: 20%;
+      height: 100%;
+      left: 20%;
+      border-left: 3px solid #040b4a;
+      border-right: 3px solid #06137b;
+      box-sizing: border-box;
+      background-position: 0 0, 0 100%;
+      background-repeat: no-repeat;
+      background-size: 100% 3px;
+      background-image: #06137b;
+      background-image: linear-gradient(to right, #06137b 0%, #040b4a 100%), linear-gradient(to right, #06137b 0%, #040b4a 100%); }
+    #compare .container table th {
+      height: 60px;
+      text-align: center;
+      vertical-align: middle;
+      border: 1px solid #dddddd;
+      padding: 15px; }
+    #compare .container table td {
+      height: 60px;
+      text-align: center;
+      vertical-align: middle;
+      border: 1px solid #dddddd;
+      padding: 15px; }
+    #compare .container table .clear {
+      clear: both; }
+  #compare .container:after {
+    content: "";
+    display: table;
+    clear: both; }
