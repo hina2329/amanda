@@ -1,0 +1,49 @@
+#review {
+    text-align:center;
+    padding:80px 0;
+    .tabsWrap {
+        background: #faf9f9;
+        .tab {
+            display: none;
+            &:first-child {
+                display: block;
+            }
+            .colLeft {
+                float: left;
+                width: 400px;
+            }
+        }
+    }
+    #tabs{
+        border-bottom: #ededed 1px solid;
+        height: 43px;
+        margin: 0;
+        text-align: center;
+        li {
+            display: inline-block;
+            &:before {
+                content: "";
+            }
+            
+            a {
+                width: 180px;
+                line-height: 40px;
+                border-bottom: transparent 4px solid;
+                padding: 0 10px;
+                text-decoration: none;
+                color: #575757;
+                display: inline-block;
+                font-size: 20px;
+                 font-family: 'AvenirNextLTPro-Bold';
+            }
+            &.active {
+                a {
+                color: $emerald;
+                border-color: $emerald;
+                }
+            }
+        }
+
+
+    }
+}

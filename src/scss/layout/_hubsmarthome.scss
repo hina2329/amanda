@@ -1,0 +1,32 @@
+#hubSmartHome {
+    padding: 80px 0;
+    .container {
+        text-align: center;
+        padding: 0 193px;
+        p{
+            margin-bottom: 25px;
+        }
+    }
+}
+#smartSleep {
+     padding: 80px 0 0;
+    
+    .container {
+        text-align: center;
+        padding: 0 270px 80px;
+         border-bottom: 1px solid #d5d2ca;
+        p{
+            margin-bottom: 25px;
+            font-size: 27px;
+            line-height: 36px;
+            color: $dovegrey;
+;
+        }
+        a{
+            color: #41C683;
+            &:hover {
+                color: #515151;
+            }
+        }
+    }
+}

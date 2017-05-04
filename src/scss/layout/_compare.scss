@@ -1,7 +1,11 @@
 #compare {
-    margin: 50px 0;
+    margin: 80px 0;
     overflow:hidden;
     .container {
+        text-align:center;
+        h4{
+            margin-bottom: 50px;
+        }
         table {
             width: 100%;
             min-width: 700px;
@@ -16,15 +20,15 @@
                 width: 20%;
                 height: 100%;
                 left: 20%;
-                border-left: 3px solid #040b4a;
-                border-right: 3px solid #06137b;
+                border-left: 3px solid #41C683;
+                border-right: 3px solid #41C683;
                 box-sizing: border-box;
                 background-position: 0 0, 0 100%;
                 background-repeat: no-repeat;
                 background-size: 100% 3px;
-                background-image: #06137b;
-                background-image: linear-gradient(to right, #06137b 0%, #040b4a 100%),
-                    linear-gradient(to right, #06137b 0%, #040b4a 100%);                              
+                background-image: #41C683;
+                background-image: linear-gradient(to right, #41C683 0%, #41C683 100%),
+                    linear-gradient(to right, #41C683 0%, #41C683 100%);                              
             }
             th {
                 height: 60px;

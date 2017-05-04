@@ -4,14 +4,14 @@
     @include media('<tablet'){ 
         padding: 50px 0;
     }
-     @include media('>=tablet', '<=desktop'){ 
-             padding: 50px 0; 
-        }
+    @include media('>=tablet', '<=desktop'){ 
+        padding: 50px 0; 
+    }
     .container {
         @include media('<tablet'){ 
             width: 96%
         }
-         @include media('>=tablet', '<=desktop'){ 
+        @include media('>=tablet', '<=desktop'){ 
             width: 96%;  
         }
     }
@@ -26,7 +26,7 @@
         }
     }
     .colLeft {
-        width: 697px;
+        width: 585px;
         float: left;
         position: relative;
         @include media('<tablet'){ 
@@ -34,60 +34,63 @@
             float: none;
             padding: 0 4%;
         }
-           @include media('>=tablet', '<=desktop'){ 
+        @include media('>=tablet', '<=desktop'){ 
             width: 96%;
             float: none;
             padding: 0 4%;
         }
-        img {
-            position: absolute;
-            right: 10px;
-            @include media('<tablet'){ 
-                width: 100%;
-                position: initial;
-                right: 0;
-            }
-             @include media('>=tablet', '<=desktop'){ 
-            width: 100%;
-                position: initial;
-                right: 0 
-        }
+        a{
+            text-decoration: none;
+            color:#555555;
 
+
+            h3 {
+                margin-bottom: 15px;
+            }
+            img {
+                width: 585px;
+                @include media('<tablet'){ 
+                    width: 100%;
+                }
+                @include media('>=tablet', '<=desktop'){ 
+                    width: 100%;
+                    position: initial;
+                    right: 0 
+                }
+            }
+            &:hover {
+                opacity: 0.6;
+                  text-decoration: underline;
+            }
         }
     }
     .colRight {
-        width: 406px;
+        width: 400px;
         float: right;
-        text-align: left;
+        text-align: center;
         @include media('<tablet'){ 
             width: 96%;
             float: none;
             padding: 0 4%;
         }
-           @include media('>=tablet', '<=desktop'){ 
+        @include media('>=tablet', '<=desktop'){ 
             width: 96%;
             float: none;
             padding: 0 4%;
         }
+ a{
+            text-decoration: none;
+            color:#555555;
+             h3 {
+                margin-bottom: 15px;
+            }
+              &:hover {
+                opacity: 0.6;
+                  text-decoration: underline;
+            }
+
+ }
         
-        .info {
-            h6 {
-                margin: 0 0 16px;
-            }
-            p {
-                line-height: 22px;
-                color: #757575;
-                text-align: justify;
-            }
-            &:nth-child(1) {
-                margin: 0 0 29px;
-            }
-            &:nth-child(2) {
-                margin: 0 0 34px;
-            }
-            &:nth-child(3) {
-                margin: 0 0 35px;
-            }
         }
-    }
+    
 }
