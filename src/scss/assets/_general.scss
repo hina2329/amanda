@@ -2,20 +2,20 @@
     font-family: 'AvenirNextLTPro-Regular';
     src: url('../fonts/AvenirNextLTPro-Regular.eot'); /* IE9 Compat Modes */
     src: url('../fonts/AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/AvenirNextLTPro-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-    url('../fonts/AvenirNextLTPro-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-    url('../fonts/AvenirNextLTPro-Regular.otf') format('opentype'), /* Safari, Android, iOS */
-    url('../fonts/AvenirNextLTPro-Regular') format('svg'); /* Legacy iOS */
+        url('../fonts/AvenirNextLTPro-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/AvenirNextLTPro-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/AvenirNextLTPro-Regular.otf') format('opentype'), /* Safari, Android, iOS */
+        url('../fonts/AvenirNextLTPro-Regular') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
     font-family: 'AvenirNextLTPro-Bold';
     src: url('../fonts/AvenirNextLTPro-Bold.eot'); /* IE9 Compat Modes */
     src: url('../fonts/AvenirNextLTPro-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/AvenirNextLTPro-Bold.woff2') format('woff2'), /* Super Modern Browsers */
-    url('../fonts/AvenirNextLTPro-Bold.woff') format('woff'), /* Pretty Modern Browsers */
-    url('../fonts/AvenirNextLTPro-Bold.otf') format('opentype'), /* Safari, Android, iOS */
-    url('../fonts/AvenirNextLTPro-Bold') format('svg'); /* Legacy iOS */
+        url('../fonts/AvenirNextLTPro-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/AvenirNextLTPro-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+        url('../fonts/AvenirNextLTPro-Bold.otf') format('opentype'), /* Safari, Android, iOS */
+        url('../fonts/AvenirNextLTPro-Bold') format('svg'); /* Legacy iOS */
 }
 
 body {
@@ -100,4 +100,48 @@ h6 {
 }
 :-moz-placeholder { /* Firefox 18- */
     color: #afafaf;
+}
+input[type="text"], input[type="email"], input[type="tel"]{
+    line-height: 40px;
+    height: 40px; 
+    border: 1px solid #ccc;
+    outline: 0;
+    border-radius: 3px;
+    padding: 0 8px;
+    font-size: 12px;
+    margin: 0 15px 0 0;
+    width:100%;
+    margin-bottom: 30px;
+}
+select {
+    line-height: 40px;
+    height: 40px; 
+    border: 1px solid #ccc;
+    outline: 0;
+    border-radius: 3px;
+    padding: 0 8px;
+    font-size: 15px;
+    width:100%;
+    margin-bottom: 30px;
+    
+}
+textarea{ 
+    border: 1px solid #ccc;
+    outline: 0;
+    border-radius: 3px;
+    padding: 8px;
+    font-size: 15px;
+    width:100%;
+    margin-bottom: 30px;
+    height: 220px;
+}
+label {
+    display:block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-family: 'AvenirNextLTPro-Bold';
+    text-transform: uppercase;
+
+
 }

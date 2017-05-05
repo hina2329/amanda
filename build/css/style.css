@@ -137,6 +137,47 @@ h6 {
   /* Firefox 18- */
   color: #afafaf; }
 
+input[type="text"], input[type="email"], input[type="tel"] {
+  line-height: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  outline: 0;
+  border-radius: 3px;
+  padding: 0 8px;
+  font-size: 12px;
+  margin: 0 15px 0 0;
+  width: 100%;
+  margin-bottom: 30px; }
+
+select {
+  line-height: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  outline: 0;
+  border-radius: 3px;
+  padding: 0 8px;
+  font-size: 15px;
+  width: 100%;
+  margin-bottom: 30px; }
+
+textarea {
+  border: 1px solid #ccc;
+  outline: 0;
+  border-radius: 3px;
+  padding: 8px;
+  font-size: 15px;
+  width: 100%;
+  margin-bottom: 30px;
+  height: 220px; }
+
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-family: 'AvenirNextLTPro-Bold';
+  text-transform: uppercase; }
+
 /* ====================== */
 /*         LAYOUT         */
 /* ====================== */
@@ -1188,12 +1229,21 @@ footer {
   #review .tabsWrap {
     background: #faf9f9; }
     #review .tabsWrap .tab {
+      width: 800px;
+      margin: 0 auto;
+      padding: 50px 0;
       display: none; }
       #review .tabsWrap .tab:first-child {
         display: block; }
       #review .tabsWrap .tab .colLeft {
         float: left;
+        width: 400px;
+        border-right: 1px solid #ccc; }
+      #review .tabsWrap .tab .colRight {
+        float: right;
         width: 400px; }
+        #review .tabsWrap .tab .colRight img {
+          width: 320px; }
   #review #tabs {
     border-bottom: #ededed 1px solid;
     height: 43px;
@@ -1216,3 +1266,67 @@ footer {
       #review #tabs li.active a {
         color: #41C683;
         border-color: #41C683; }
+  #review .greyWrap {
+    background: #faf9f9;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-bottom: 30px; }
+
+#allReviews #reviewFilter {
+  border-bottom: 1px solid #ccc;
+  padding: 50px 0; }
+  #allReviews #reviewFilter .filter {
+    float: left; }
+    #allReviews #reviewFilter .filter label {
+      display: inline-block;
+      font-size: 16px;
+      font-family: 'AvenirNextLTPro-Bold';
+      text-transform: uppercase;
+      margin-right: 15px; }
+    #allReviews #reviewFilter .filter select {
+      border: 1px solid #ccc;
+      line-height: 40px;
+      height: 40px;
+      width: 100px;
+      padding: 0 10px; }
+      #allReviews #reviewFilter .filter select > option {
+        line-height: 35px; }
+  #allReviews #reviewFilter .writeReview {
+    float: right; }
+
+#reviewForm {
+  padding: 80px 0; }
+  #reviewForm .container {
+    width: 800px;
+    margin: 0 auto; }
+    #reviewForm .container h5 {
+      color: #41C683;
+      margin-bottom: 45px; }
+    #reviewForm .container .align {
+      text-align: center; }
+    #reviewForm .container hr {
+      color: #ccc;
+      border-bottom: 1px solid #ccc;
+      margin: 50px 0; }
+    #reviewForm .container span {
+      display: initial;
+      text-align: left;
+      margin-bottom: 8px;
+      font-size: 14px;
+      font-family: 'AvenirNextLTPro-Bold';
+      text-transform: uppercase;
+      margin-right: 193px; }
+    #reviewForm .container select {
+      float: none;
+      width: 200px;
+      margin-bottom: 0; }
+    #reviewForm .container .midWidth {
+      width: 387px;
+      float: left;
+      margin-right: 25px; }
+    #reviewForm .container .noMargin {
+      margin-right: 0; }

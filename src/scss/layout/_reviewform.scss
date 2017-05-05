@@ -1,0 +1,47 @@
+#reviewForm {
+    padding: 80px 0;
+   
+    .container{
+        width: 800px;
+        margin: 0 auto;
+        
+        h5{
+            color: $emerald;
+            margin-bottom: 45px;
+            
+        }
+        .align{
+             text-align: center;
+        }
+        hr{
+            color: #ccc;
+            border-bottom: 1px solid #ccc;
+            margin: 50px 0;
+        }
+        span{
+            display:initial;
+            text-align: left;
+            margin-bottom: 8px;
+            font-size: 14px;
+            font-family: 'AvenirNextLTPro-Bold';
+            text-transform: uppercase;
+            margin-right: 193px
+        }
+        select{
+            float: none;
+            width: 200px;
+            margin-bottom: 0;
+            
+        }
+        .midWidth {
+            width: 387px;
+            float: left;
+             margin-right: 25px;
+                
+        }
+        .noMargin{
+            margin-right: 0;
+        }
+    }
+}
+

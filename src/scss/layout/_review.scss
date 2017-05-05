@@ -4,6 +4,9 @@
     .tabsWrap {
         background: #faf9f9;
         .tab {
+            width: 800px;
+            margin: 0 auto;
+            padding: 50px 0;
             display: none;
             &:first-child {
                 display: block;
@@ -11,6 +14,14 @@
             .colLeft {
                 float: left;
                 width: 400px;
+                border-right: 1px solid #ccc;
+            }
+            .colRight {
+                float: right;
+                width: 400px;
+                img {
+                    width: 320px;
+                }
             }
         }
     }
@@ -24,7 +35,7 @@
             &:before {
                 content: "";
             }
-            
+
             a {
                 width: 180px;
                 line-height: 40px;
@@ -34,16 +45,26 @@
                 color: #575757;
                 display: inline-block;
                 font-size: 20px;
-                 font-family: 'AvenirNextLTPro-Bold';
+                font-family: 'AvenirNextLTPro-Bold';
             }
             &.active {
                 a {
-                color: $emerald;
-                border-color: $emerald;
+                    color: $emerald;
+                    border-color: $emerald;
                 }
             }
         }
 
 
+    }
+    .greyWrap {
+        background: #faf9f9;
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        margin-bottom: 30px;
     }
 }

@@ -1,0 +1,36 @@
+#allReviews {
+
+    .container {
+    }
+    #reviewFilter {
+        border-bottom: 1px solid #ccc;
+        padding: 50px 0;
+
+
+        .filter {
+            float:left;
+            label{
+                display: inline-block;
+                font-size: 16px;
+                font-family: 'AvenirNextLTPro-Bold';
+                text-transform: uppercase;
+                margin-right: 15px;
+            }
+            select {
+                border:1px solid #ccc;
+                line-height: 40px;
+                height: 40px;
+                width: 100px;
+                padding: 0 10px;
+                > option {
+                    line-height: 35px;
+                }
+            }
+        }
+
+        .writeReview{
+            float: right;
+        }
+    }
+}
+
