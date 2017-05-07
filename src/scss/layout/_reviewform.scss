@@ -1,17 +1,17 @@
 #reviewForm {
     padding: 80px 0;
-   
+
     .container{
         width: 800px;
         margin: 0 auto;
-        
+
         h5{
             color: $emerald;
             margin-bottom: 45px;
-            
+
         }
         .align{
-             text-align: center;
+            text-align: center;
         }
         hr{
             color: #ccc;
@@ -31,17 +31,91 @@
             float: none;
             width: 200px;
             margin-bottom: 0;
-            
+
         }
         .midWidth {
             width: 387px;
             float: left;
-             margin-right: 25px;
-                
+            margin-right: 25px;
+
+        }
+        .smallWidth {
+            width: 300px;
+            float: right;
+            margin: 0;
         }
         .noMargin{
             margin-right: 0;
         }
+        #rating {
+            width: 600px;
+            margin: 20px auto 0;
+            text-align: center;
+            position: relative;
+            .fa-star{
+                font-size: 24px;
+                margin-bottom: 8px;
+                color: #dcdcdc;
+
+            }
+            label {
+                cursor: pointer;
+                display: inline-block;
+                text-align: center;
+                margin-right: 20px;
+                small {
+                    display: block;
+                    font-size: 13px;
+                    text-transform: capitalize;
+                    color: $scorpion;
+
+                }
+                &.active {
+                    .fa-star {
+                        color: red !important;
+                    }
+                }
+            }
+            .radioReview {
+                display: none;
+            }
+
+        }
+        #partners {
+            width: 600px;
+            margin: 20px auto 0;
+            text-align: center;
+            position: relative;
+            .fa-male, .fa-female{
+                font-size: 30px;
+                margin-bottom: 8px;
+                color: #dcdcdc;
+
+            }
+            label {
+                cursor: pointer;
+                display: inline-block;
+                text-align: center;
+                margin-right: 50px;
+                small {
+                    display: block;
+                    font-size: 13px;
+                    text-transform: capitalize;
+                    color: $scorpion;
+
+                }
+                &.active {
+                    .fa-male, .fa-female {
+                        color: red !important;
+                    }
+                }
+            }
+            .radioPartner {
+                display: none;
+            }
+
+        }
     }
 }
+
 

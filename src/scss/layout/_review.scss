@@ -2,28 +2,32 @@
     text-align:center;
     padding:80px 0;
     .tabsWrap {
-        background: #faf9f9;
         .tab {
-            width: 800px;
-            margin: 0 auto;
-            padding: 50px 0;
             display: none;
             &:first-child {
                 display: block;
             }
-            .colLeft {
-                float: left;
-                width: 400px;
-                border-right: 1px solid #ccc;
-            }
-            .colRight {
-                float: right;
-                width: 400px;
-                img {
-                    width: 320px;
+            .tabContent {
+                width: 800px;
+                margin: 0 auto;
+                padding: 50px 0;
+                
+                .colRight {
+                    float: right;
+                    width: 400px;
+                    img {
+                        width: 320px;
+                    }
+                }
+                
+                .colLeft {
+                    float: left;
+                    width: 400px;
+                    border-right: 1px solid #ccc;
                 }
             }
         }
+
     }
     #tabs{
         border-bottom: #ededed 1px solid;
