@@ -1281,7 +1281,8 @@ footer {
   background: #FFFFFF; }
   #allReviews #reviewFilter {
     border-bottom: 1px solid #ccc;
-    padding: 50px 0; }
+    padding: 50px 0;
+    margin-bottom: 50px; }
     #allReviews #reviewFilter .container .filter {
       float: left; }
       #allReviews #reviewFilter .container .filter label {
@@ -1301,49 +1302,47 @@ footer {
           line-height: 35px; }
     #allReviews #reviewFilter .container .writeReview {
       float: right; }
-  #allReviews .reviewRow {
-    padding: 80px 0; }
-    #allReviews .reviewRow .container .leftCol {
-      float: left;
-      width: 260px;
-      text-align: left;
-      position: relative; }
-      #allReviews .reviewRow .container .leftCol h6 {
-        font-size: 14px;
-        margin-bottom: 10px; }
-      #allReviews .reviewRow .container .leftCol .userRating {
-        margin-bottom: 15px; }
-      #allReviews .reviewRow .container .leftCol span {
-        display: block;
-        margin-bottom: 5px;
-        font-size: 12px; }
-      #allReviews .reviewRow .container .leftCol .date {
-        position: absolute;
-        bottom: -30px;
-        left: 0; }
-    #allReviews .reviewRow .container .rightCol {
-      float: right;
-      width: 800px;
-      text-align: left;
-      position: relative; }
-      #allReviews .reviewRow .container .rightCol p {
-        margin-bottom: 20px; }
-      #allReviews .reviewRow .container .rightCol .reviewDetail {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: baseline;
-        -webkit-align-items: baseline;
-        -ms-flex-align: baseline;
-        align-items: baseline;
-        clear: both; }
-        #allReviews .reviewRow .container .rightCol .reviewDetail span {
-          margin-right: 25px; }
+  #allReviews .reviewRow .container .leftCol {
+    float: left;
+    width: 260px;
+    text-align: left;
+    position: relative; }
+    #allReviews .reviewRow .container .leftCol h6 {
+      font-size: 14px;
+      margin-bottom: 10px; }
+    #allReviews .reviewRow .container .leftCol .userRating {
+      margin-bottom: 15px; }
+    #allReviews .reviewRow .container .leftCol span {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 12px; }
+    #allReviews .reviewRow .container .leftCol .date {
+      position: absolute;
+      bottom: -30px;
+      left: 0; }
+  #allReviews .reviewRow .container .rightCol {
+    float: right;
+    width: 800px;
+    text-align: left;
+    position: relative; }
+    #allReviews .reviewRow .container .rightCol p {
+      margin-bottom: 20px; }
+    #allReviews .reviewRow .container .rightCol .reviewDetail {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: baseline;
+      -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+      align-items: baseline;
+      clear: both; }
+      #allReviews .reviewRow .container .rightCol .reviewDetail span {
+        margin-right: 25px; }
 
 hr {
   border-bottom: 1px solid #ccc;
-  margin: 30px 0; }
+  margin: 50px 0; }
 
 #reviewForm {
   padding: 80px 0; }
@@ -1427,3 +1426,42 @@ hr {
           color: red !important; }
       #reviewForm .container #partners .radioPartner {
         display: none; }
+
+#faq {
+  padding: 80px 0; }
+  #faq .container #tabs {
+    text-align: center; }
+    #faq .container #tabs li {
+      display: inline-block;
+      width: 144px;
+      margin-right: 42px; }
+      #faq .container #tabs li a {
+        text-decoration: none;
+        display: block;
+        color: #575757;
+        font-size: 15px;
+        text-transform: uppercase; }
+        #faq .container #tabs li a .fa {
+          display: block;
+          font-size: 100px;
+          color: #575757;
+          margin-bottom: 40px; }
+          #faq .container #tabs li a .fa:hover {
+            color: #41C683; }
+        #faq .container #tabs li a:hover {
+          color: #41C683; }
+      #faq .container #tabs li:last-child {
+        margin: 0; }
+
+.search {
+  width: 658px;
+  margin-top: 20px; }
+  .search input[type=text] {
+    width: 526px;
+    background: #FFFFFF;
+    float: left;
+    height: 45px;
+    line-height: 45px; }
+  .search .btn {
+    line-height: 45px;
+    height: 45px; }
