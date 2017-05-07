@@ -1,17 +1,16 @@
-
 #faq {
     padding: 80px 0;
-    .container{
-        #tabs{
-            text-align:center;
-            li{
+    .container {
+        #tabs {
+            text-align: center;
+            li {
                 display: inline-block;
-                width:144px;
+                width: 144px;
                 margin-right: 42px;
-                a{
+                a {
                     text-decoration: none;
                     display: block;
-                    color:$scorpion;
+                    color: $scorpion;
                     font-size: 15px;
                     text-transform: uppercase;
                     .fa {
@@ -19,36 +18,48 @@
                         font-size: 100px;
                         color: $scorpion;
                         margin-bottom: 40px;
-                    
+                    }
                     &:hover {
                         color: $emerald;
-                    }
-                    }
-                     &:hover {
-                        color: $emerald;
+                        .fa {
+                            color: $emerald;
+                        }
                     }
                 }
-                &:last-child{
+                &.active {
+                    a {
+                        color: $emerald;
+                        .fa {
+                            color: $emerald;
+                        }
+                    }
+                }
+                &:last-child {
                     margin: 0;
+                }
+            }
+        }
+        .tabsWrap {
+            .tab {
+                display: none;
+                &:first-child {
+                    display: block;
                 }
             }
         }
     }
 }
 
-
-
-
 .search {
     width: 658px;
-    margin-top:20px;
-    input[type=text]{
+    margin-top: 20px;
+    input[type=text] {
         width: 526px;
         background: $white;
         float: left;
         height: 45px;
         line-height: 45px;
-        
+
     }
     .btn {
         line-height: 45px;

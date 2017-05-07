@@ -9,28 +9,84 @@
 //}
 //
 //
+
+
 //Review Rating
+if (document.getElementsByClassName("stars").length > 0) {
 
-var ratingStars = document.getElementById("rating").getElementsByClassName("stars");
-for (i = 0; i < ratingStars.length; i++) {
-    ratingStars[i].addEventListener("click", activeStars);
-}
-function activeStars() {
+    var ratingStars = document.getElementById("rating").getElementsByClassName("stars");
     for (i = 0; i < ratingStars.length; i++) {
-        ratingStars[i].classList.remove("active");
+        ratingStars[i].addEventListener("click", activeStars);
     }
-    this.classList.add("active");
+    function activeStars() {
+        for (i = 0; i < ratingStars.length; i++) {
+            ratingStars[i].classList.remove("active");
+        }
+        this.classList.add("active");
     }
+
+}
+
+
 //Review Partner
-
-var partnerRating = document.getElementById("partners").getElementsByClassName("rate");
-for (a = 0; a < partnerRating.length; a++) {
-    partnerRating[a].addEventListener("click", activePartner);
-}
-function activePartner() {
+if (document.getElementsByClassName("rate").length > 0) {
+    var partnerRating = document.getElementById("partners").getElementsByClassName("rate");
     for (a = 0; a < partnerRating.length; a++) {
-        partnerRating[a].classList.remove("active");
+        partnerRating[a].addEventListener("click", activePartner);
     }
-    this.classList.add("active");
+    function activePartner() {
+        for (a = 0; a < partnerRating.length; a++) {
+            partnerRating[a].classList.remove("active");
+        }
+        this.classList.add("active");
+    }
 }
 
+
+// FAQ Tabs
+if (document.getElementById("tabs") !== null) {
+
+    var faqs = document.getElementById("tabs").getElementsByTagName("li");
+
+    for (var i = 0; i < faqs.length; i++) {
+
+        var link = faqs[i].getElementsByTagName("a");
+
+        faqs[i].classList.remove("active");
+
+        faqs[i].addEventListener("click", activeIt);
+
+        link[0].addEventListener("click", getTab);
+
+
+    }
+
+    function getTab(e) {
+
+        var tabID = (this.hash).replace("#", "");
+        var tab = document.getElementById(tabID);
+        var tabs = document.getElementsByClassName("tab");
+
+        for (var i = 0; i < tabs.length; i++ ) {
+            tabs[i].style.display = "none";
+        }
+
+        tab.style.display = "block";
+
+        e.preventDefault();
+
+    }
+
+    function activeIt() {
+
+        for (var i = 0; i < faqs.length; i++) {
+
+            faqs[i].classList.remove("active");
+
+        }
+
+        this.classList.add("active");
+
+    }
+
+}

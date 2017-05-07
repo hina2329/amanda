@@ -1446,12 +1446,20 @@ hr {
           font-size: 100px;
           color: #575757;
           margin-bottom: 40px; }
-          #faq .container #tabs li a .fa:hover {
-            color: #41C683; }
         #faq .container #tabs li a:hover {
+          color: #41C683; }
+          #faq .container #tabs li a:hover .fa {
+            color: #41C683; }
+      #faq .container #tabs li.active a {
+        color: #41C683; }
+        #faq .container #tabs li.active a .fa {
           color: #41C683; }
       #faq .container #tabs li:last-child {
         margin: 0; }
+  #faq .container .tabsWrap .tab {
+    display: none; }
+    #faq .container .tabsWrap .tab:first-child {
+      display: block; }
 
 .search {
   width: 658px;
