@@ -42,10 +42,55 @@
         .tabsWrap {
             .tab {
                 display: none;
+
                 &:first-child {
                     display: block;
                 }
             }
+            #faqHeading{
+                width: 800px;
+                margin: 0 auto;
+
+                position:relative;
+                a{
+                    text-decoration:none;
+
+                    &:after{
+                        content: '\f067 ';
+                        font-family: FontAwesome;
+                        position: absolute;
+                        right: 22px;
+                        top:10px;
+                        color: $emerald;
+                        font-size: 30px;
+                    }
+                    &.active:after {
+                        content: '\f068';
+                        font-family: FontAwesome;
+                        position: absolute;
+                        right: 22px;
+                        top:10px;
+                        color: $emerald;
+                        font-size: 30px;
+
+                    }
+                 
+                }
+                .faqContent{
+                    display:none;
+                           &:first-child {
+                    display: block;
+                }
+                  
+                    p{
+                        margin-bottom: 20px;
+                    }
+                  
+                }
+
+            }
+
+
         }
     }
 }

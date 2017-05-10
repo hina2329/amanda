@@ -1,14 +1,14 @@
-//var tabItems = document.getElementById("tabs").getElementsByTagName("li");
-//
-//for (i = 0; i < tabItems.length; i++) {
-//    var anchor = tabItems[i].getElementsByTagName("a");
-//    //console.log(anchor[0].getAttribute("href"));
-//    anchor[0].addEventListener("click", function(){
-//        alert(this.getAttribute("href"));
-//    });
-//}
-//
-//
+// var tabItems = document.getElementById("tabs").getElementsByTagName("li");
+
+// for (i = 0; i < tabItems.length; i++) {
+//     var anchor = tabItems[i].getElementsByTagName("a");
+//     //console.log(anchor[0].getAttribute("href"));
+//     anchor[0].addEventListener("click", function(){
+//         alert(this.getAttribute("href"));
+//     });
+// }
+
+
 
 
 //Review Rating
@@ -52,8 +52,6 @@ if (document.getElementById("tabs") !== null) {
 
         var link = faqs[i].getElementsByTagName("a");
 
-        faqs[i].classList.remove("active");
-
         faqs[i].addEventListener("click", activeIt);
 
         link[0].addEventListener("click", getTab);
@@ -67,7 +65,7 @@ if (document.getElementById("tabs") !== null) {
         var tab = document.getElementById(tabID);
         var tabs = document.getElementsByClassName("tab");
 
-        for (var i = 0; i < tabs.length; i++ ) {
+        for (var i = 0; i < tabs.length; i++) {
             tabs[i].style.display = "none";
         }
 
@@ -90,3 +88,47 @@ if (document.getElementById("tabs") !== null) {
     }
 
 }
+//// FAQ Read More
+//if (document.getElementById("tabWrap") !== null) {
+//    
+//    var faqMore = document.getElementById("tabWrap").getElementsByClassName("faqHeading");
+//    
+// for (more = 0; more< faqMore.length; more++) {
+//     
+//        faqMore[more].addEventListener("click", activeFQA);
+//
+//    }
+//    function activeFQA(e) {
+//  
+//        for (a = 0; a < faqMore.length; a++) {
+//            faqMore[a].classList.toggle("active");
+//        }
+//          e.preventDefault();
+//    }
+//  
+// 
+//  
+//   
+//         
+//}
+// jQuery
+jQuery(function () {
+
+//    FQA description accordian
+    jQuery('#faqHeading a').click(function () {
+
+        jQuery(this).parent('#faqHeading').find('.faqContent').slideToggle();
+
+        jQuery(this).toggleClass('.active');
+
+
+        return false;
+
+
+
+
+
+    });
+
+
+});
